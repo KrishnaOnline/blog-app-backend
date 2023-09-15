@@ -8,7 +8,7 @@ app.use(express.json());
 
 const blog = require('./routes/blog');
 
-// app.use('/api/v1', blog);
+app.use('/api/v1', blog);
 
 app.listen(PORT, () => {
     console.log(`Server Started at Port:${PORT}`);
